@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var TopImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // 表示する画像を設定する.
+        let myImage = UIImage(named:"バックホウ.jpg")
+        
+        // 画像をUIImageViewに設定する.
+        TopImageView.image = myImage
+        
+        
+        // UIImageViewをViewに追加する.
+        self.view.addSubview(TopImageView)
     }
 
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
