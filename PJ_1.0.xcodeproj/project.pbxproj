@@ -15,6 +15,8 @@
 		590069B31D11B0E400F08AD1 /* PJ_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590069B21D11B0E400F08AD1 /* PJ_1_0Tests.swift */; };
 		590069BE1D11B0E400F08AD1 /* PJ_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590069BD1D11B0E400F08AD1 /* PJ_1_0UITests.swift */; };
 		5908F3521D138D7D0043BF40 /* バックホウ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5908F3511D138D7D0043BF40 /* バックホウ.jpg */; };
+		598EA99B1D17948A004CA92E /* iconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598EA99A1D17948A004CA92E /* iconViewController.swift */; };
+		598EA99D1D1795E2004CA92E /* iconCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598EA99C1D1795E2004CA92E /* iconCustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		590069BD1D11B0E400F08AD1 /* PJ_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJ_1_0UITests.swift; sourceTree = "<group>"; };
 		590069BF1D11B0E400F08AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5908F3511D138D7D0043BF40 /* バックホウ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "バックホウ.jpg"; sourceTree = "<group>"; };
+		598EA99A1D17948A004CA92E /* iconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconViewController.swift; sourceTree = "<group>"; };
+		598EA99C1D1795E2004CA92E /* iconCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconCustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				590069A41D11B0E300F08AD1 /* Assets.xcassets */,
 				590069A61D11B0E300F08AD1 /* LaunchScreen.storyboard */,
 				590069A91D11B0E300F08AD1 /* Info.plist */,
+				598EA99A1D17948A004CA92E /* iconViewController.swift */,
+				598EA99C1D1795E2004CA92E /* iconCustomCell.swift */,
 			);
 			path = PJ_1.0;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				590069A01D11B0E300F08AD1 /* ViewController.swift in Sources */,
+				598EA99B1D17948A004CA92E /* iconViewController.swift in Sources */,
 				5900699E1D11B0E300F08AD1 /* AppDelegate.swift in Sources */,
+				598EA99D1D1795E2004CA92E /* iconCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
