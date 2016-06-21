@@ -11,6 +11,10 @@ import UIKit
 class iconViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
 
     @IBOutlet weak var myCollectionView: UICollectionView!
+    
+    var selectedIndex = -1
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +38,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
         let cell:iconCustomCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! iconCustomCell
         
         cell.title.text = "タイトル\(indexPath.row)"
-        cell.image.image = UIImage(named: "Daikiti.png")
+        cell.image.image = UIImage(named: "backet.png")
         
         return cell
     }
@@ -45,6 +49,22 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    
+        func collectionView(collectionView: UICollectionView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            print("\(indexPath.row)個目を選択")
+            
+            selectedIndex = indexPath.row
+            performSegueWithIdentifier("iconSecond",sender: nil)
+        }
+        
+        // Segueで画面遷移する時
+        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            var secondVC = segue.destinationViewController as! iconSecond
+            
+            secondVC.scSelectedName = selectedName
+        }
+    
+    
     }
     
 
