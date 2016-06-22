@@ -12,6 +12,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
 
     @IBOutlet weak var myCollectionView: UICollectionView!
     
+    var working_car_Image = ["000.png","001.png","002.png","003.png"]
     var selectedIndex = -1
     
     
@@ -21,6 +22,23 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
         // Do any additional setup after loading the view.
     }
 
+////    JSON----------------------------------------------------------------------
+//    override func viewWillAppear(animated: Bool) {
+//        let path = NSBundle.mainBundle().pathForResource("json", ofType: "image")
+//        let jsondata = NSData(contentsOfFile: path!)
+//        
+//        let jsonArray = (try! NSJSONSerialization.JSONObjectWithData(jsondata!, options: [])) as! NSArray
+//        
+//        for data in jsonArray{
+//            print("[\(data["name"])]")
+//            working_car_List.append(data as! NSDictionary)
+//        }
+//    }
+    
+    
+    
+    
+    
     
     //グルーピングの数 セクション
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -29,7 +47,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     //表示個数の設定
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return working_car_Image.count
     }
     
     //セルの表示
@@ -38,7 +56,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
         let cell:iconCustomCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! iconCustomCell
         
         cell.title.text = "タイトル\(indexPath.row)"
-        cell.image.image = UIImage(named: "backet.png")
+        cell.image.image = UIImage(named:working_car_Image[indexPath.row])
         
         return cell
     }
@@ -58,11 +76,11 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
         }
         
         // Segueで画面遷移する時
-        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-            var secondVC = segue.destinationViewController as! iconSecond
-            
-            secondVC.scSelectedName = selectedName
-        }
+//        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//            var secondVC = segue.destinationViewController as! iconSecond
+//            
+//            secondVC.scSelectedName = selectedName
+//        }
     
     
     }
