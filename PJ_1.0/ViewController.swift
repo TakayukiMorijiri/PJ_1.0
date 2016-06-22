@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // 表示する画像を設定する.
-        let myImage = UIImage(named:"バックホウ.jpg")
+        let myImage = UIImage(named:"バックホウmain.png")
         
         // 画像をUIImageViewに設定する.
         TopImageView.image = myImage
