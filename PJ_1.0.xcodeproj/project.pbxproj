@@ -21,6 +21,10 @@
 		59A925A51D1A2DBD00F07550 /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925A41D1A2DBD00F07550 /* 001.png */; };
 		59A925A71D1A324500F07550 /* 002.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925A61D1A324500F07550 /* 002.png */; };
 		59A925A91D1A324D00F07550 /* 003.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925A81D1A324D00F07550 /* 003.png */; };
+		59A925AB1D1AC72600F07550 /* 004.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925AA1D1AC72600F07550 /* 004.png */; };
+		59A925AD1D1AC73600F07550 /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925AC1D1AC73600F07550 /* 005.png */; };
+		59A925AF1D1AC73F00F07550 /* 006.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925AE1D1AC73F00F07550 /* 006.png */; };
+		59A925B11D1ADCAA00F07550 /* iconDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A925B01D1ADCAA00F07550 /* iconDetail.swift */; };
 		59DB19621D18EAF40026F868 /* iconSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DB19611D18EAF40026F868 /* iconSecond.swift */; };
 		59DB19641D18EC140026F868 /* JSON_1.0 in Resources */ = {isa = PBXBuildFile; fileRef = 59DB19631D18EC140026F868 /* JSON_1.0 */; };
 /* End PBXBuildFile section */
@@ -63,6 +67,10 @@
 		59A925A41D1A2DBD00F07550 /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
 		59A925A61D1A324500F07550 /* 002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 002.png; sourceTree = "<group>"; };
 		59A925A81D1A324D00F07550 /* 003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 003.png; sourceTree = "<group>"; };
+		59A925AA1D1AC72600F07550 /* 004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 004.png; sourceTree = "<group>"; };
+		59A925AC1D1AC73600F07550 /* 005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 005.png; sourceTree = "<group>"; };
+		59A925AE1D1AC73F00F07550 /* 006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 006.png; sourceTree = "<group>"; };
+		59A925B01D1ADCAA00F07550 /* iconDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconDetail.swift; sourceTree = "<group>"; };
 		59DB19611D18EAF40026F868 /* iconSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconSecond.swift; sourceTree = "<group>"; };
 		59DB19631D18EC140026F868 /* JSON_1.0 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JSON_1.0; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +128,9 @@
 				59A925A41D1A2DBD00F07550 /* 001.png */,
 				59A925A61D1A324500F07550 /* 002.png */,
 				59A925A81D1A324D00F07550 /* 003.png */,
+				59A925AA1D1AC72600F07550 /* 004.png */,
+				59A925AC1D1AC73600F07550 /* 005.png */,
+				59A925AE1D1AC73F00F07550 /* 006.png */,
 				5900699D1D11B0E300F08AD1 /* AppDelegate.swift */,
 				5900699F1D11B0E300F08AD1 /* ViewController.swift */,
 				590069A41D11B0E300F08AD1 /* Assets.xcassets */,
@@ -129,6 +140,7 @@
 				598EA99A1D17948A004CA92E /* iconViewController.swift */,
 				598EA99C1D1795E2004CA92E /* iconCustomCell.swift */,
 				59DB19611D18EAF40026F868 /* iconSecond.swift */,
+				59A925B01D1ADCAA00F07550 /* iconDetail.swift */,
 				59DB19631D18EC140026F868 /* JSON_1.0 */,
 			);
 			path = PJ_1.0;
@@ -256,12 +268,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A925AF1D1AC73F00F07550 /* 006.png in Resources */,
 				590069A81D11B0E300F08AD1 /* LaunchScreen.storyboard in Resources */,
 				59A925A11D1A262D00F07550 /* バックホウmain.png in Resources */,
 				590069A51D11B0E300F08AD1 /* Assets.xcassets in Resources */,
 				59A925A51D1A2DBD00F07550 /* 001.png in Resources */,
 				59A925A71D1A324500F07550 /* 002.png in Resources */,
 				590429CB1D1A24F400A4D354 /* Main.storyboard in Resources */,
+				59A925AB1D1AC72600F07550 /* 004.png in Resources */,
+				59A925AD1D1AC73600F07550 /* 005.png in Resources */,
 				59A925A91D1A324D00F07550 /* 003.png in Resources */,
 				59A925A31D1A2D8F00F07550 /* 000.png in Resources */,
 				59DB19641D18EC140026F868 /* JSON_1.0 in Resources */,
@@ -294,6 +309,7 @@
 				5900699E1D11B0E300F08AD1 /* AppDelegate.swift in Sources */,
 				598EA99D1D1795E2004CA92E /* iconCustomCell.swift in Sources */,
 				59DB19621D18EAF40026F868 /* iconSecond.swift in Sources */,
+				59A925B11D1ADCAA00F07550 /* iconDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
