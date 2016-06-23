@@ -24,7 +24,7 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
         override func viewWillAppear(animated: Bool) {
             //-- json.txtファイルを読み込んで
-            let path = NSBundle.mainBundle().pathForResource("JSON_1.0", ofType: "txt")
+            let path = NSBundle.mainBundle().pathForResource("JSON_1.0", ofType: "text")
             let jsondata = NSData(contentsOfFile: path!)
             //-- 辞書データに変換して
             let jsonArray = (try! NSJSONSerialization.JSONObjectWithData(jsondata!, options: [])) as! NSArray
@@ -62,7 +62,7 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("\(indexPath.row)行目を選択")
         selectedIndex = indexPath.row
-        performSegueWithIdentifier("showSecondView",sender: nil)
+        performSegueWithIdentifier("iconDetail",sender: nil)
     }
         
         
@@ -75,11 +75,17 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
         // Dispose of any resources that can be recreated.
     }
     
-//    // Segueで画面遷移する時
+//     Segueで画面遷移する時
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var iconDetailVC = segue.destinationViewController as! iconDetail
         
-        iconDetailVC.scSelectedIndex = selectedIndex
+        
+        if (segue.identifier == "iconDetail"){
+            var iconDetailVC = segue.destinationViewController as! iconDetail
+            
+            iconDetailVC.scSelectedIndex = selectedIndex
+        
+        }
+        
     }
     
     
