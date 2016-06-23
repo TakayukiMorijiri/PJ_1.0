@@ -15,6 +15,8 @@
 		590069BE1D11B0E400F08AD1 /* PJ_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590069BD1D11B0E400F08AD1 /* PJ_1_0UITests.swift */; };
 		590429CB1D1A24F400A4D354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590429C91D1A24F400A4D354 /* Main.storyboard */; };
 		597E333D1D1B89390050FA63 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E333C1D1B89390050FA63 /* firstViewController.swift */; };
+		597E333F1D1B90BE0050FA63 /* aiueoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E333E1D1B90BE0050FA63 /* aiueoViewController.swift */; };
+		597E33411D1B93180050FA63 /* aiueoCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E33401D1B93180050FA63 /* aiueoCustom.swift */; };
 		598EA99B1D17948A004CA92E /* iconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598EA99A1D17948A004CA92E /* iconViewController.swift */; };
 		598EA99D1D1795E2004CA92E /* iconCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598EA99C1D1795E2004CA92E /* iconCustomCell.swift */; };
 		59A925A11D1A262D00F07550 /* バックホウmain.png in Resources */ = {isa = PBXBuildFile; fileRef = 59A925A01D1A262D00F07550 /* バックホウmain.png */; };
@@ -62,6 +64,8 @@
 		590069BF1D11B0E400F08AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590429CA1D1A24F400A4D354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		597E333C1D1B89390050FA63 /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		597E333E1D1B90BE0050FA63 /* aiueoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aiueoViewController.swift; sourceTree = "<group>"; };
+		597E33401D1B93180050FA63 /* aiueoCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aiueoCustom.swift; sourceTree = "<group>"; };
 		598EA99A1D17948A004CA92E /* iconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconViewController.swift; sourceTree = "<group>"; };
 		598EA99C1D1795E2004CA92E /* iconCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconCustomCell.swift; sourceTree = "<group>"; };
 		59A925A01D1A262D00F07550 /* バックホウmain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "バックホウmain.png"; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				59DB19611D18EAF40026F868 /* iconSecond.swift */,
 				59A925B01D1ADCAA00F07550 /* iconDetail.swift */,
 				59DB19631D18EC140026F868 /* JSON_1.0.text */,
+				597E333E1D1B90BE0050FA63 /* aiueoViewController.swift */,
+				597E33401D1B93180050FA63 /* aiueoCustom.swift */,
 			);
 			path = PJ_1.0;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 				598EA99D1D1795E2004CA92E /* iconCustomCell.swift in Sources */,
 				59DB19621D18EAF40026F868 /* iconSecond.swift in Sources */,
 				59A925B11D1ADCAA00F07550 /* iconDetail.swift in Sources */,
+				597E33411D1B93180050FA63 /* aiueoCustom.swift in Sources */,
+				597E333F1D1B90BE0050FA63 /* aiueoViewController.swift in Sources */,
 				597E333D1D1B89390050FA63 /* firstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

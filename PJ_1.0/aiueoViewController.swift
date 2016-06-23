@@ -1,20 +1,19 @@
 //
-//  iconViewController.swift
+//  aiueoViewController.swift
 //  PJ_1.0
 //
-//  Created by 森尻尭之 on 2016/06/20.
+//  Created by 森尻尭之 on 2016/06/23.
 //  Copyright © 2016年 森尻尭之. All rights reserved.
 //
 
 import UIKit
 
-class iconViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
+class aiueoViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
-    @IBOutlet weak var myCollectionView: UICollectionView!
+    @IBOutlet weak var aiueoCollection: UICollectionView!
     
-    var working_car_Image = ["000.png","001.png","002.png","003.png","004.png","005.png","006.png"]
+    var working_car_String = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の"]
     var selectedIndex = -1
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     //表示個数の設定
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return working_car_Image.count
+        return working_car_String.count
     }
     
     //セルの表示
@@ -38,33 +37,14 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
         let cell:iconCustomCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! iconCustomCell
         
         cell.title.text = "タイトル\(indexPath.row)"
-        cell.image.image = UIImage(named:working_car_Image[indexPath.row])
+        cell.image.image = UIImage(named:working_car_String[indexPath.row])
         
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("\(indexPath.row)番目")
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    
-        func collectionView(collectionView: UICollectionView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-            print("\(indexPath.row)個目を選択")
-            
-            selectedIndex = indexPath.row
-            performSegueWithIdentifier("iconSecond",sender: nil)
-        }
-        
-        // Segueで画面遷移する時
-//        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//            var secondVC = segue.destinationViewController as! iconSecond
-//            
-//            secondVC.scSelectedName = selectedName
-//        }
-    
-    
     }
     
 
