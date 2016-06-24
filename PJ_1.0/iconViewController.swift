@@ -13,6 +13,9 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     @IBOutlet weak var myCollectionView: UICollectionView!
     
     var working_car_Image = ["000.png","001.png","002.png","003.png","004.png","005.png","006.png"]
+    
+    var carTitle = ["ショベル","ダンプ","クレーン","ドーザー","ごみ収集車","ユニック","トレーラー"]
+    
     var selectedIndex = -1
     
     
@@ -38,7 +41,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
         
         let cell:iconCustomCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! iconCustomCell
         
-        cell.title.text = "タイトル\(indexPath.row)"
+        cell.title.text = carTitle[indexPath.row]
         cell.image.image = UIImage(named:working_car_Image[indexPath.row])
         
         return cell

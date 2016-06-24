@@ -14,6 +14,7 @@
 		590069B31D11B0E400F08AD1 /* PJ_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590069B21D11B0E400F08AD1 /* PJ_1_0Tests.swift */; };
 		590069BE1D11B0E400F08AD1 /* PJ_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590069BD1D11B0E400F08AD1 /* PJ_1_0UITests.swift */; };
 		590429CB1D1A24F400A4D354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590429C91D1A24F400A4D354 /* Main.storyboard */; };
+		59601FF81D1CCE7A00C2D818 /* aiueoSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59601FF71D1CCE7A00C2D818 /* aiueoSecond.swift */; };
 		597E333D1D1B89390050FA63 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E333C1D1B89390050FA63 /* firstViewController.swift */; };
 		597E333F1D1B90BE0050FA63 /* aiueoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E333E1D1B90BE0050FA63 /* aiueoViewController.swift */; };
 		597E33411D1B93180050FA63 /* aiueoCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597E33401D1B93180050FA63 /* aiueoCustom.swift */; };
@@ -63,6 +64,7 @@
 		590069BD1D11B0E400F08AD1 /* PJ_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJ_1_0UITests.swift; sourceTree = "<group>"; };
 		590069BF1D11B0E400F08AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		590429CA1D1A24F400A4D354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59601FF71D1CCE7A00C2D818 /* aiueoSecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aiueoSecond.swift; sourceTree = "<group>"; };
 		597E333C1D1B89390050FA63 /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
 		597E333E1D1B90BE0050FA63 /* aiueoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aiueoViewController.swift; sourceTree = "<group>"; };
 		597E33401D1B93180050FA63 /* aiueoCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aiueoCustom.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				59DB19631D18EC140026F868 /* JSON_1.0.text */,
 				597E333E1D1B90BE0050FA63 /* aiueoViewController.swift */,
 				597E33401D1B93180050FA63 /* aiueoCustom.swift */,
+				59601FF71D1CCE7A00C2D818 /* aiueoSecond.swift */,
 			);
 			path = PJ_1.0;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				597E33411D1B93180050FA63 /* aiueoCustom.swift in Sources */,
 				597E333F1D1B90BE0050FA63 /* aiueoViewController.swift in Sources */,
 				597E333D1D1B89390050FA63 /* firstViewController.swift in Sources */,
+				59601FF81D1CCE7A00C2D818 /* aiueoSecond.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

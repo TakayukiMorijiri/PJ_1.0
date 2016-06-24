@@ -15,4 +15,5 @@ class iconCustomCell: UICollectionViewCell {
     
     @IBOutlet weak var title: UILabel!
     
+    
 }

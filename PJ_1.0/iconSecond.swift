@@ -42,7 +42,7 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
         
         // 表示するセルの中身
         func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            var cell = UITableViewCell(style: .Default, reuseIdentifier: "myCell")
+            let cell = UITableViewCell(style: .Default, reuseIdentifier: "myCell")
             //cell.textLabel!.text = "\(indexPath.row)行目"
             
             //文字色を茶色にする
@@ -50,7 +50,7 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
             //矢印を右側につける
             cell.accessoryType = .DisclosureIndicator
             
-            var workingName = workingCarList[indexPath.row]["name"] as! String
+            let workingName = workingCarList[indexPath.row]["name"] as! String
             
             cell.textLabel!.text = "\(workingName)"
             return cell

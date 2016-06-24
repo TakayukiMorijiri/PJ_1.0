@@ -43,9 +43,23 @@ class aiueoViewController: UIViewController,UICollectionViewDelegate,UICollectio
         return cell
     }
     
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("\(indexPath.row)番目")
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    
+        func collectionView(collectionView: UICollectionView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            print("\(indexPath.row)個目を選択")
+            
+            selectedIndex = indexPath.row
+            performSegueWithIdentifier("aiueoSecond",sender: nil)
+        }
+    
+    
+    
     }
     
 
