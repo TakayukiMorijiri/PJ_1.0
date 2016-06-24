@@ -10,4 +10,6 @@ import UIKit
 
 class aiueoCustom: UICollectionViewCell {
     
+    @IBOutlet weak var workingLabel: UILabel!
+    
 }

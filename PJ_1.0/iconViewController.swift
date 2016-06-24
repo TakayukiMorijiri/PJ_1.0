@@ -19,6 +19,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        myCollectionView.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class aiueoViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class aiueoViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet weak var aiueoCollection: UICollectionView!
     
@@ -17,6 +17,7 @@ class aiueoViewController: UIViewController,UITableViewDataSource,UITableViewDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        aiueoCollection.backgroundColor = UIColor.whiteColor()
 
         // Do any additional setup after loading the view.
     }
@@ -34,10 +35,10 @@ class aiueoViewController: UIViewController,UITableViewDataSource,UITableViewDel
     //セルの表示
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell:iconCustomCell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! iconCustomCell
+        let cell:aiueoCustom = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! aiueoCustom
         
-        cell.title.text = "タイトル\(indexPath.row)"
-        cell.image.image = UIImage(named:working_car_String[indexPath.row])
+        cell.workingLabel.text = "\(working_car_String[indexPath.row])"
+        //cell.workingLabel.text = UILabel(named:working_car_String[indexPath.row])
         
         return cell
     }
