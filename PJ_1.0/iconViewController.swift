@@ -14,7 +14,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     var working_car_Image = ["000.png","001.png","002.png","003.png","004.png","005.png","006.png"]
     
-    var carTitle = ["ショベル","ダンプ","クレーン","ドーザー","ごみ収集車","ユニック","トレーラー"]
+    var carTitle = ["ショベル","ダンプ","クレーン","ホイールローダー","ごみ収集車","ユニック","トレーラー"]
     
     var selectedIndex = -1
     

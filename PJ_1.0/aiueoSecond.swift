@@ -25,7 +25,7 @@ class aiueoSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     override func viewWillAppear(animated: Bool) {
         //-- json.txtファイルを読み込んで
-        let path = NSBundle.mainBundle().pathForResource("JSON_1.0", ofType: "text")
+        let path = NSBundle.mainBundle().pathForResource("JSON_1.0", ofType: "json")
         let jsondata = NSData(contentsOfFile: path!)
         //-- 辞書データに変換して
         let jsonArray = (try! NSJSONSerialization.JSONObjectWithData(jsondata!, options: [])) as! NSArray
