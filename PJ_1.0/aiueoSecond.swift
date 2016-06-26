@@ -32,9 +32,14 @@ class aiueoSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
         //--  辞書データの個数だけ繰り返して表示する
         for data in jsonArray {
             print("[\(data["name"])]")
+            
+//            if data["name"] as! String == selectedIndex{
+            
             workingCarList.append(data as! NSDictionary)
+            }
+        
         }
-    }
+    
     
     // 行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

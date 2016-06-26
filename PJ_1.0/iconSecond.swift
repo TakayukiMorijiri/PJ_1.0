@@ -9,7 +9,7 @@
 import UIKit
 
 class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
-
+    
     @IBOutlet weak var workingCar: UITableView!
     
     var selectedIndex = -1
@@ -23,6 +23,7 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     }
     
         override func viewWillAppear(animated: Bool) {
+            
             //-- json.txtファイルを読み込んで
             let path = NSBundle.mainBundle().pathForResource("JSON_1.0", ofType: "json")
             let jsondata = NSData(contentsOfFile: path!)
@@ -32,8 +33,12 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
             
             //--  辞書データの個数だけ繰り返して表示する
             for data in jsonArray {
-                print("[\(data["name"])]")
-                workingCarList.append(data as! NSDictionary)
+//                print(data["category"] as! Int)
+                if data["category"] as! Int == selectedIndex {
+                    print("[\(data["name"])]")
+                    workingCarList.append(data as! NSDictionary)
+                
+                }
             }
         }
         
@@ -63,13 +68,11 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     // 選択された時に行う処理
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("\(indexPath.row)行目を選択")
+        
         selectedIndex = indexPath.row
         performSegueWithIdentifier("iconDetail",sender: nil)
     }
         
-        
-        
-
     
 
     override func didReceiveMemoryWarning() {

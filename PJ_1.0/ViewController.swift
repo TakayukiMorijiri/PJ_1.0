@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         // 画像をUIImageViewに設定する.
         TopImageView.image = myImage
         
-        
         // UIImageViewをViewに追加する.
         self.view.addSubview(TopImageView)
     }

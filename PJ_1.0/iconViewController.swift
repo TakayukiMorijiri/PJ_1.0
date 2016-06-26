@@ -9,6 +9,7 @@
 import UIKit
 
 class iconViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate{
+    
 
     @IBOutlet weak var myCollectionView: UICollectionView!
     
@@ -16,7 +17,7 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     var carTitle = ["ショベル","ダンプ","クレーン","ホイールローダー","ごみ収集車","ユニック","トレーラー"]
     
-    var selectedIndex = -1
+    var selectedIndex = 0
     
     
     override func viewDidLoad() {
@@ -49,28 +50,22 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print("\(indexPath.row)番目")
+        selectedIndex = indexPath.row
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    
-        func collectionView(collectionView: UICollectionView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-            print("\(indexPath.row)個目を選択")
-            
-            selectedIndex = indexPath.row
-            performSegueWithIdentifier("iconSecond",sender: nil)
-        }
-        
-        // Segueで画面遷移する時
-//        func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//            var secondVC = segue.destinationViewController as! iconSecond
-//            
-//            secondVC.scSelectedName = selectedName
-//        }
-    
-    
     }
     
+    // Segueで画面遷移する時
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let segueView = segue.destinationViewController
+        if segueView.classForCoder == iconSecond.classForCoder() {
+            let secondVC = segueView as! iconSecond
+            secondVC.selectedIndex = (self.myCollectionView.indexPathsForSelectedItems()?.first?.row)!
+        }
+    }
 
     /*
     // MARK: - Navigation
