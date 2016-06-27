@@ -12,7 +12,8 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     @IBOutlet weak var workingCar: UITableView!
     
-    var selectedIndex = -1
+    var selectedIndex = 0
+    var selectedID:Int = -1
     
     var workingCarList:[NSDictionary] = []
     
@@ -69,7 +70,8 @@ class iconSecond: UIViewController,UITableViewDelegate,UITableViewDataSource{
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("\(indexPath.row)行目を選択")
         
-        selectedIndex = indexPath.row
+//        selectedIndex = indexPath.row
+        selectedID = workingCarList[indexPath.row]["id"] as! Int
         performSegueWithIdentifier("iconDetail",sender: nil)
     }
         

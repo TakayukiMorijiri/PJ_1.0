@@ -15,9 +15,9 @@ class iconViewController: UIViewController,UICollectionViewDataSource,UICollecti
     
     var working_car_Image = ["000.png","001.png","002.png","003.png","004.png","005.png","006.png"]
     
-    var carTitle = ["ショベル","ダンプ","クレーン","ホイールローダー","ごみ収集車","ユニック","トレーラー"]
+    var carTitle = ["ショベル","ダンプ","クレーン","ゴミ収集車","ホイールローダー","ユニック","トレーラー"]
     
-    var selectedIndex = 0
+    var selectedIndex = -1
     
     
     override func viewDidLoad() {
