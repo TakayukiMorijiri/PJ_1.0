@@ -106,49 +106,10 @@
                                     <segue destination="lFu-L1-vng" kind="show" id="tXK-kk-dfl"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tBz-Sr-uu4">
-                                <rect key="frame" x="0.0" y="66" width="320" height="547"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dd7-60-gL7">
-                                    <size key="itemSize" width="59" height="57"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="UJv-Th-SVe" customClass="aiueoCustom" customModule="PJ_1_0" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="59" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="59" height="57"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDy-xg-roy">
-                                                    <rect key="frame" x="4" y="4" width="42" height="42"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <connections>
-                                            <outlet property="workingLabel" destination="yDy-xg-roy" id="720-Yo-WdN"/>
-                                            <segue destination="W76-0h-DLA" kind="show" id="ah1-Ze-NSn"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="ZLQ-ns-Evp" id="Igd-C0-kcr"/>
-                                    <outlet property="delegate" destination="ZLQ-ns-Evp" id="ORI-da-uiE"/>
-                                </connections>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="aiueoCollection" destination="tBz-Sr-uu4" id="Wcz-Yc-0On"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fr7-sY-a5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -430,10 +391,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="hwe-QS-6pS"/>
+        <segue reference="FW1-Qy-go6"/>
+        <segue reference="tXK-kk-dfl"/>
         <segue reference="OVC-hx-HKn"/>
         <segue reference="tnk-6Q-Ni9"/>
-        <segue reference="RFF-7c-sVQ"/>
-        <segue reference="FW1-Qy-go6"/>
+        <segue reference="hwe-QS-6pS"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class aiueoViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class aiueoViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var aiueoCollection: UICollectionView!
     
-    var working_car_String = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の"]
+    var working_car_String = ["あ","い","う","え","お","か","き","く","け","こ","さ","し","す","せ","そ","た","ち","つ","て","と","な","に","ぬ","ね","の","は","ひ","ふ","へ","ほ","ま","み","む","め","も"]
     var selectedIndex = -1
     
     override func viewDidLoad() {
